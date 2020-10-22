@@ -25,20 +25,24 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        if let d = History.get()?.resp {
+            self.loadData(d)
+        }
+        
         let timer = Timer(timeInterval: 5, repeats: true) { (t) in
             if let url = URL(string: "https://api.github.com") {
                 
                 let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
                     
+                    var status = true
                     if let d = data {
-                        if let dict = try? JSONSerialization.jsonObject(with: d, options: .mutableContainers) as? [String: String] {
-                            self.resp = dict
-                            DispatchQueue.main.async {
-                                self.tv.reloadData()
-                            }
-                        }
+                        self.loadData(d)
                     } else {
-                        print("error")
+                        status = false
+                    }
+                    
+                    DispatchQueue.main.async {
+                        History.insert(status: status, resp: data)
                     }
                 }
                 task.resume()
@@ -48,6 +52,14 @@ class HomeViewController: UIViewController {
         RunLoop.current.add(timer, forMode: .common)
     }
     
+    func loadData(_ data: Data) {
+        if let dict = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: String] {
+            self.resp = dict
+            DispatchQueue.main.async {
+                self.tv.reloadData()
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

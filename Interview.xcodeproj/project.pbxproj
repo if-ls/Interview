@@ -18,6 +18,8 @@
 		2171EFB925406D7800387B97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFB825406D7800387B97 /* HomeViewController.swift */; };
 		2171EFBA25406D7800387B97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFB825406D7800387B97 /* HomeViewController.swift */; };
 		2171EFBB25406D7800387B97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFB825406D7800387B97 /* HomeViewController.swift */; };
+		21C17103254194EE0078FE93 /* History+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C17102254194EE0078FE93 /* History+CoreData.swift */; };
+		21C171052541A09D0078FE93 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C171042541A09D0078FE93 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		2171EFAA2540626000387B97 /* InterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewUITests.swift; sourceTree = "<group>"; };
 		2171EFAC2540626000387B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2171EFB825406D7800387B97 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		21C17102254194EE0078FE93 /* History+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreData.swift"; sourceTree = "<group>"; };
+		21C171042541A09D0078FE93 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				2171EF852540625F00387B97 /* AppDelegate.swift */,
 				2171EF872540625F00387B97 /* SceneDelegate.swift */,
 				2171EFB825406D7800387B97 /* HomeViewController.swift */,
+				21C171042541A09D0078FE93 /* HistoryViewController.swift */,
+				21C17102254194EE0078FE93 /* History+CoreData.swift */,
 				2171EF8B2540625F00387B97 /* Main.storyboard */,
 				2171EF912540626000387B97 /* Assets.xcassets */,
 				2171EF932540626000387B97 /* LaunchScreen.storyboard */,
@@ -267,7 +273,9 @@
 				2171EFB925406D7800387B97 /* HomeViewController.swift in Sources */,
 				2171EF862540625F00387B97 /* AppDelegate.swift in Sources */,
 				2171EF882540625F00387B97 /* SceneDelegate.swift in Sources */,
+				21C171052541A09D0078FE93 /* HistoryViewController.swift in Sources */,
 				2171EF902540625F00387B97 /* Interview.xcdatamodeld in Sources */,
+				21C17103254194EE0078FE93 /* History+CoreData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+    <entity name="History" representedClassName="History" syncable="YES" codeGenerationType="class">
+        <attribute name="resp" optional="YES" attributeType="Binary"/>
+        <attribute name="status" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="timestamp" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="url" attributeType="String" defaultValueString=""/>
+    </entity>
+    <elements>
+        <element name="History" positionX="-54" positionY="-9" width="128" height="103"/>
+    </elements>
 </model>
