@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		2171EF862540625F00387B97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EF852540625F00387B97 /* AppDelegate.swift */; };
 		2171EF882540625F00387B97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EF872540625F00387B97 /* SceneDelegate.swift */; };
-		2171EF8A2540625F00387B97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EF892540625F00387B97 /* ViewController.swift */; };
 		2171EF8D2540625F00387B97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2171EF8B2540625F00387B97 /* Main.storyboard */; };
 		2171EF902540625F00387B97 /* Interview.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2171EF8E2540625F00387B97 /* Interview.xcdatamodeld */; };
 		2171EF922540626000387B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2171EF912540626000387B97 /* Assets.xcassets */; };
 		2171EF952540626000387B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2171EF932540626000387B97 /* LaunchScreen.storyboard */; };
 		2171EFA02540626000387B97 /* InterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EF9F2540626000387B97 /* InterviewTests.swift */; };
 		2171EFAB2540626000387B97 /* InterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFAA2540626000387B97 /* InterviewUITests.swift */; };
+		2171EFB925406D7800387B97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFB825406D7800387B97 /* HomeViewController.swift */; };
+		2171EFBA25406D7800387B97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFB825406D7800387B97 /* HomeViewController.swift */; };
+		2171EFBB25406D7800387B97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFB825406D7800387B97 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		2171EF822540625F00387B97 /* Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2171EF852540625F00387B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2171EF872540625F00387B97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2171EF892540625F00387B97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2171EF8C2540625F00387B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2171EF8F2540625F00387B97 /* Interview.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Interview.xcdatamodel; sourceTree = "<group>"; };
 		2171EF912540626000387B97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		2171EFA62540626000387B97 /* InterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2171EFAA2540626000387B97 /* InterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewUITests.swift; sourceTree = "<group>"; };
 		2171EFAC2540626000387B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2171EFB825406D7800387B97 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,7 @@
 			children = (
 				2171EF852540625F00387B97 /* AppDelegate.swift */,
 				2171EF872540625F00387B97 /* SceneDelegate.swift */,
-				2171EF892540625F00387B97 /* ViewController.swift */,
+				2171EFB825406D7800387B97 /* HomeViewController.swift */,
 				2171EF8B2540625F00387B97 /* Main.storyboard */,
 				2171EF912540626000387B97 /* Assets.xcassets */,
 				2171EF932540626000387B97 /* LaunchScreen.storyboard */,
@@ -262,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2171EF8A2540625F00387B97 /* ViewController.swift in Sources */,
+				2171EFB925406D7800387B97 /* HomeViewController.swift in Sources */,
 				2171EF862540625F00387B97 /* AppDelegate.swift in Sources */,
 				2171EF882540625F00387B97 /* SceneDelegate.swift in Sources */,
 				2171EF902540625F00387B97 /* Interview.xcdatamodeld in Sources */,
@@ -274,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2171EFA02540626000387B97 /* InterviewTests.swift in Sources */,
+				2171EFBA25406D7800387B97 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2171EFAB2540626000387B97 /* InterviewUITests.swift in Sources */,
+				2171EFBB25406D7800387B97 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
