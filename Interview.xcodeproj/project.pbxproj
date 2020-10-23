@@ -13,13 +13,11 @@
 		2171EF902540625F00387B97 /* Interview.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2171EF8E2540625F00387B97 /* Interview.xcdatamodeld */; };
 		2171EF922540626000387B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2171EF912540626000387B97 /* Assets.xcassets */; };
 		2171EF952540626000387B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2171EF932540626000387B97 /* LaunchScreen.storyboard */; };
-		2171EFA02540626000387B97 /* InterviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EF9F2540626000387B97 /* InterviewTests.swift */; };
 		2171EFAB2540626000387B97 /* InterviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFAA2540626000387B97 /* InterviewUITests.swift */; };
 		2171EFB925406D7800387B97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFB825406D7800387B97 /* HomeViewController.swift */; };
-		2171EFBA25406D7800387B97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFB825406D7800387B97 /* HomeViewController.swift */; };
-		2171EFBB25406D7800387B97 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2171EFB825406D7800387B97 /* HomeViewController.swift */; };
 		21C17103254194EE0078FE93 /* History+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C17102254194EE0078FE93 /* History+CoreData.swift */; };
 		21C171052541A09D0078FE93 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C171042541A09D0078FE93 /* HistoryViewController.swift */; };
+		21C171462541B82F0078FE93 /* HistoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C171452541B82F0078FE93 /* HistoryTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +47,6 @@
 		2171EF942540626000387B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2171EF962540626000387B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2171EF9B2540626000387B97 /* InterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2171EF9F2540626000387B97 /* InterviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewTests.swift; sourceTree = "<group>"; };
 		2171EFA12540626000387B97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2171EFA62540626000387B97 /* InterviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2171EFAA2540626000387B97 /* InterviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewUITests.swift; sourceTree = "<group>"; };
@@ -57,6 +54,7 @@
 		2171EFB825406D7800387B97 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		21C17102254194EE0078FE93 /* History+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "History+CoreData.swift"; sourceTree = "<group>"; };
 		21C171042541A09D0078FE93 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		21C171452541B82F0078FE93 /* HistoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +122,7 @@
 		2171EF9E2540626000387B97 /* InterviewTests */ = {
 			isa = PBXGroup;
 			children = (
-				2171EF9F2540626000387B97 /* InterviewTests.swift */,
+				21C171452541B82F0078FE93 /* HistoryTest.swift */,
 				2171EFA12540626000387B97 /* Info.plist */,
 			);
 			path = InterviewTests;
@@ -283,8 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2171EFA02540626000387B97 /* InterviewTests.swift in Sources */,
-				2171EFBA25406D7800387B97 /* HomeViewController.swift in Sources */,
+				21C171462541B82F0078FE93 /* HistoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +290,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2171EFAB2540626000387B97 /* InterviewUITests.swift in Sources */,
-				2171EFBB25406D7800387B97 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.if-ls.Interview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -478,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.if-ls.Interview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

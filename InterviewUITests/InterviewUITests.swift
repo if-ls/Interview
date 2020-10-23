@@ -23,13 +23,20 @@ class InterviewUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testRefresh() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        app.navigationBars["首页"].buttons["历史"].tap()
+        
+        let cell = app.cells.firstMatch
+        let start = cell.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 0))
+        let finish = cell.coordinate(withNormalizedOffset: CGVector(dx: 0, dy: 6))
+        start.press(forDuration: 0, thenDragTo: finish)
     }
 
     func testLaunchPerformance() throws {

@@ -30,26 +30,32 @@ class HomeViewController: UIViewController {
         }
         
         let timer = Timer(timeInterval: 5, repeats: true) { (t) in
-            if let url = URL(string: "https://api.github.com") {
-                
-                let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-                    
-                    var status = true
-                    if let d = data {
-                        self.loadData(d)
-                    } else {
-                        status = false
-                    }
-                    
-                    DispatchQueue.main.async {
-                        History.insert(status: status, resp: data)
-                    }
+            self.apiGet { (data) in
+                if let d = data {
+                    self.loadData(d)
                 }
-                task.resume()
             }
         }
         
         RunLoop.current.add(timer, forMode: .common)
+    }
+    
+    func apiGet(completion: @escaping (Data?) -> ()) {
+        if let url = URL(string: "https://api.github.com") {
+            let task = URLSession.shared.dataTask(with: url) { (data, _, _) in
+                completion(data)
+                
+                var status = true
+                if data == nil {
+                    status = false
+                }
+                
+                DispatchQueue.main.async {
+                    History.insert(status: status, resp: data)
+                }
+            }
+            task.resume()
+        }
     }
     
     func loadData(_ data: Data) {
