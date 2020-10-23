@@ -9,3 +9,5 @@
 - [x] 界面设计必须符合iOS和Android界面规范。
 - [x] 包含Unit Test 和 UI Test。
 
+![Leaks](http://chuantu.xyz/t6/741/1603420552x-591238492.png)
+![CoreData](http://chuantu.xyz/t6/741/1603420650x1700340450.png)
